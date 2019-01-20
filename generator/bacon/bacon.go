@@ -27,6 +27,20 @@ const (
 	MeatAndFiller TextType = "meat-and-filler"
 )
 
+func (t TextType) Validate() bool {
+	validTypes := []TextType{
+		AllMeat,
+		MeatAndFiller,
+	}
+
+	for _, typ := range validTypes {
+		if typ == t {
+			return true
+		}
+	}
+	return false
+}
+
 const apiUrl = "https://baconipsum.com/api"
 
 // NewBaconIpsum create an a generator for type bacon ipsum
