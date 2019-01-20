@@ -1,5 +1,5 @@
 # Bacon Ipsum Cli
-[![Build Status](https://travis-ci.org/friendsofgo/bacon-ipsum.svg?branch=master)](https://travis-ci.org/friendsofgo/bacon)
+[![Build Status](https://travis-ci.org/friendsofgo/bacon-ipsum.svg?branch=master)](https://travis-ci.org/friendsofgo/bacon-ipsum)
 
 This project is purely formative, It has been created in order to illustrate the examples of your respective blog article.
 
