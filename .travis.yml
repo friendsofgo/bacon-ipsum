@@ -1,0 +1,20 @@
+language: go
+
+go:
+  - "1.11"
+  - tip
+
+install:
+  - go get -t ./...
+
+matrix:
+  allow_failures:
+    - go: tip
+  fast_finish: true
+
+script:
+  - go build -o bacon-ipsum cmd/bacon-ipsum/main.go
+  - ./bacon --type all-meat -sentences 1
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
